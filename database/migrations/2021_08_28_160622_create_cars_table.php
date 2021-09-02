@@ -24,6 +24,7 @@ class CreateCarsTable extends Migration
             $table->integer('quilometragem', false, 11);
             $table->string('cambio',191);
             $table->string('cor',191);
+            $table->double('preco');
             $table->dateTime('created_at');
             $table->dateTime('updated_at');
             $table->dateTime('deleted_at')->nullable();

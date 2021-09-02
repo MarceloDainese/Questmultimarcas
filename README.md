@@ -8,10 +8,10 @@ php artisan key:generate
 
 Rode as Migrations e a Seed para gerar o primeiro usuário com email: admin@admin.com
 senha: admin
-para executar as migrations
+Para executar as migrations
 php artisan migrate
 
-para executar o seed e criar o usuário admin@admin.com 
+Para executar o seed e criar o usuário admin@admin.com 
 php artisan db:seed
 
 Sistema desenvolvido com Laravel 8

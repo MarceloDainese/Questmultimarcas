@@ -149,8 +149,6 @@ class Main extends Controller
                     $re = '@^(\w+): ([0-9]{4}) (\w+:) (\w+.[0-9]{3}) (\w+í\w+): (\w+) (\wâ\w+): (\w*\w+) (\w+): ([0-9]) (\w+) (\w+): (\w+)@';
                     $result = preg_match_all($re, $detailsCar, $details, PREG_SET_ORDER, 0);
                 };
-                $contentLoaded = $details;
-
 
                 foreach ($details as $val) { // Carrega o restante do conteudo se os Regex funcionar
                     //$val[0]; // Arry

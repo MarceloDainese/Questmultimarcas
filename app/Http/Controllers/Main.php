@@ -191,7 +191,7 @@ class Main extends Controller
                             'success'=> $this->success
                         ]);
 
-        } // if selectedContent
+        }
         else {
             return view('capturar', [
                 'cars'=> '',

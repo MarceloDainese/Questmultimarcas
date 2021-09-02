@@ -134,7 +134,7 @@ class Main extends Controller
         if($selectedContent != null){
 
             /* tratando os dados: Ano - Combustível - portas - quilometragem - Câmbio e cor
-            que estão no Array SelectedContent em details */
+            que estão no Array SelectedContent */
             foreach($selectedContent as $select){
 
                 // removendo excessos de espaços e quebras de linha
@@ -150,7 +150,7 @@ class Main extends Controller
                     $result = preg_match_all($re, $detailsCar, $details, PREG_SET_ORDER, 0);
                 };
 
-                foreach ($details as $val) { // Carrega o restante do conteudo se os Regex funcionar
+                foreach ($details as $val) { // Carrega o restante do conteudo se os Regex funcionarem
                     //$val[0]; // Arry
                     $ano = $val[2]; // Ano
                     $combustivel = $val[6]; // Combustível
@@ -183,7 +183,7 @@ class Main extends Controller
                 $this->insertCar($select['name'], $select['link'], $ano, $combustivel, $portas, $quilometragem, $cambio, $val[13], $valPrice[2]);
 
 
-            };// foreach Extraindo a segunda parte do Site
+            };
 
             return view('capturar', [
                             'cars'=> $cars,
@@ -199,5 +199,5 @@ class Main extends Controller
                 'success'=> 'false'
             ]);
         }
-    } // function search
+    }
 }

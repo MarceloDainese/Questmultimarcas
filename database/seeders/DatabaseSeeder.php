@@ -16,12 +16,12 @@ class DatabaseSeeder extends Seeder
     {
         $newUser = new \App\Models\User;
         $newUser->name = 'Admin';
-        $newUser->email = 'marcelodainese@hotmail.com';
+        $newUser->email = 'admin@admin.com';
         $newUser->email_verified_at = now();
         $newUser->phone = '11 999999999';
         $newUser->adress = 'Rua Admin';
         $newUser->remember_token = Str::random(10);
-        $newUser->password = bcrypt( 'senha123' );
+        $newUser->password = bcrypt( 'admin' );
         $newUser->save();
     }
 }
